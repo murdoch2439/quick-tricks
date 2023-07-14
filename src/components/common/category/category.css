@@ -1,0 +1,22 @@
+.category{
+    padding: 10px 5px;
+}
+
+.category__content{
+    display:flex;
+    justify-content:space-between;
+}
+
+.category__separator{
+    height:0.01rem;
+    background-color:var(--color-gray);
+    margin-top:5px;
+}
+
+.category__badge{
+    background-color: var(--color-secondary);
+    color:white;
+    border-radius:10px;
+    padding: 2px 5px;
+    font-size:16px;
+}

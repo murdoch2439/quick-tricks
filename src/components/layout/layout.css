@@ -1,0 +1,28 @@
+.layout{
+    margin:0;
+    padding:0;
+
+    /*padding-left: 60px;*/
+    /*padding-right: 60px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    .layout{
+        padding: 0 1rem;
+    }
+
+
+
+
+}

@@ -1,0 +1,37 @@
+.social__media{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    /*background-color:yellow;*/
+    /*width:100px*/
+}
+
+.social__media_item:hover{
+    color:red;
+    cursor: pointer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

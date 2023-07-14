@@ -1,0 +1,42 @@
+.FormComment__container {
+    background-color: #e7dada;
+    text-align: left;
+    width:80% ;
+    margin:20px 0;
+    padding:10px 50px;
+    border-radius:10px
+
+
+}
+
+.FormComment__container__form{
+
+
+
+
+}
+
+.FormComment__container__form_section_textInput{
+    display:flex;
+    justify-content:space-between;
+
+
+
+}
+
+.post__comment_button{
+    background-color:var(--color-primary);
+    border:none;
+    padding:10px 3em;
+    color:white;
+    border-radius:100px;
+}
+
+
+.post__comment_button:hover{
+    cursor:pointer;
+    background-color:white;
+    /*border: 1px solid var(--color-primary);*/
+    color:var(--color-primary) ;
+    border-radius:100px;
+}

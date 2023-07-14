@@ -1,0 +1,23 @@
+.bottom-navbar{
+    display: flex;
+    gap: 2rem;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar-el{
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width:700px){
+    .bottom-navbar{
+        display:grid;
+        place-items: center;
+    }
+}

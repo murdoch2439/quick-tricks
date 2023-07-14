@@ -1,0 +1,272 @@
+/*.authinput__container{*/
+/*    !*display:flex;*!*/
+/*    !*flex-direction: column;*!*/
+/*    background:transparent;*/
+/*    height:3rem;*/
+/*    position:relative;*/
+/*    width:20rem ;*/
+/*    overflow:hidden*/
+/*}*/
+
+/*.authinput__container input{*/
+/*    height:100%;*/
+/*    width:100%;*/
+/*    color:#595f6e;*/
+/*    padding-top: 1.1rem;*/
+/*    background: transparent;*/
+/*}*/
+
+/*.authinput__container p{*/
+/*    position: absolute;*/
+/*    bottom:0;*/
+/*    left:0;*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*    pointer-events: none;*/
+/*    border-bottom: 1px solid black;*/
+/*}*/
+
+
+/*.authinput__container p:after{*/
+/*    content:"";*/
+/*    position:absolute;*/
+/*    left:0;*/
+/*    bottom:-1px;*/
+/*    height:100%;*/
+/*    width:100%;*/
+/*    border-bottom:3px solid #5fa8d3;*/
+/*    transform:translateY(-100%);*/
+/*    transition:transform 0.3s ease*/
+
+/*}*/
+
+
+/*.authinput__content-name{*/
+/*    position: absolute;*/
+/*    bottom:0.6rem;*/
+/*    left:0;*/
+/*    transition:all 0.3s ease;*/
+/*}*/
+
+
+/*.authinput__container input:focus + .authinput__label-name .authinput__content-name,.authinput__container input:valid + .authinput__label-name .authinput__content-name  {*/
+/*    transform:translateY(-150%);*/
+/*    font-size: 0.6rem;*/
+/*    color: #7DB4F9;*/
+/*    font-weight:600;*/
+/*}*/
+
+
+/*.authinput__container input:focus + .authinput__label-name:after,*/
+/*.authinput__container input:valid + .authinput__label-name:after{*/
+/*     transform:translateX(0%);*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.authinput__container{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /*background:peachpuff;*/
+    height:4.6rem;
+    /*position:relative;*/
+    width:20rem ;
+    overflow:hidden;
+    margin: 0.5rem 0;
+}
+
+.authinput__container label{
+    font-size:0.9rem;
+    font-weight: 600;
+    color: white;
+    /*padding-bottom: 1rem;*/
+}
+
+.authinput__container input{
+    height:65%;
+    width:100%;
+    color:#595f6e;
+    /*padding-top: 1.7rem;*/
+    background: transparent;
+    /*padding-bottom:0;*/
+    padding-left:1rem;
+    border: 1px solid white;
+    border-radius:0.3rem
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+.category__container{
+    /*background:var(--color-primary);*/
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.category__container:before{
+    content:"|";
+    padding-right:0.5rem;
+    color:#A9A9A9;
+}
+
+.category__title{
+    font-size:0.8rem;
+}
+
+.category__title-item{
+    background: rgba(245, 108, 108,0.1);
+    font-size:0.8rem;
+    color:var(--color-secondary) ;
+    font-weight: 700;
+    padding:0.3rem 0.8rem;
+    border-radius:0.4rem;
+    transition: 400ms ease;
+
+
+}
+
+
+
+.category__title-item:hover{
+    cursor:pointer;
+    background:transparent;
+    /*border:0.7px solid var(--color-secondary)*/
+}

@@ -1,0 +1,13 @@
+.statistics__container{
+    width:17rem;
+    /*height:12rem;*/
+    /*background:darkslategray;*/
+}
+
+
+.statistics__container h1{
+    font-size: 3.8rem;
+}
+.statistics__container p{
+    font-size: 0.8rem;
+}

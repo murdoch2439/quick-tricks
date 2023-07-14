@@ -1,0 +1,24 @@
+.tags__container{
+    /*background:red ;*/
+    display: flex;
+    gap: 1rem;
+}
+.tag__container{
+    padding: 0.5em 1.5em;
+    border-radius: 100px;
+    border: 1px solid grey;
+    color:grey;
+    font-size:11px;
+
+}
+
+.tag__container:hover{
+    background-color:gray;
+    color:white;
+    cursor:pointer;
+    border-color: white;
+}
+
+.tag__container:hover .tag__title{
+    color:white
+}
