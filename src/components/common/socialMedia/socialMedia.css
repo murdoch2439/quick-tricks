@@ -8,7 +8,7 @@
 }
 
 .social__media_item:hover{
-    color:red;
+    color:var(--color-primary);
     cursor: pointer;
 
 

@@ -58,9 +58,9 @@ const Home : FunctionComponent = () =>{
                 </section>
 
                 <div className={"info-section"}>
-                    <InfoComponent icon={<RocketOutlinedIcon fontSize={"large"} />} description={"Circle animation with CSS to make great design"} />
-                    <InfoComponent icon={<AssistantOutlinedIcon fontSize={"large"} />} description={"Circle animation with CSS to make great design"} />
-                    <InfoComponent icon={<IntegrationInstructionsOutlinedIcon fontSize={"large"} />} description={"Circle animation with CSS to make great design"} />
+                    <InfoComponent icon={<RocketOutlinedIcon fontSize={"large"} />} description={"The more you learn the more you grow and gain."} />
+                    <InfoComponent icon={<AssistantOutlinedIcon fontSize={"large"} />} description={"Get specific answers and solutions on different programming topics."} />
+                    <InfoComponent icon={<IntegrationInstructionsOutlinedIcon fontSize={"large"} />} description={"Words doesn't work without code, find code snippets."} />
 
                 </div>
             </div>
@@ -72,17 +72,17 @@ const Home : FunctionComponent = () =>{
                     <div className={"aside_image_container"}>
                         <img alt={"students"} src={rightBanner} style={{width:"100%"}} />
                         <div className={"cta"}>
-                            <p>Join us today to start the journey</p>
-                            <button className={"home__loadmore__button"}>
-                                <p>Join</p>
-                            </button>
+                            <p>The academy is coming soon...</p>
+                            {/*<button className={"home__loadmore__button"}>*/}
+                            {/*    <p>Join</p>*/}
+                            {/*</button>*/}
                         </div>
 
                     </div>
                 </div>
                 <div className={"third-section-child-left"}>
                     <div className={"child-left-header"}>
-                            <h1 className={"second__title"}>Popular Post</h1>
+                            <h1 className={"second__title"}>Recent Posts</h1>
                             <select id="cars" name="posts" className={"select__container"}>
                                 <option value="all" className={"select__option"}>All post {color}</option>
                                 <option value="web design" className={"select__option"}>Web design</option>
@@ -101,11 +101,11 @@ const Home : FunctionComponent = () =>{
                             allArticles.map((article, index)=> <ArticleCard article={article} key={index} /> )
                         }
                     </div>
-                    <div className={"home__loadmore__button_container"} >
-                        <button className={"home__loadmore__button"}>
-                            See more
-                        </button>
-                    </div>
+                    {/*<div className={"home__loadmore__button_container"} >*/}
+                    {/*    <button className={"home__loadmore__button"}>*/}
+                    {/*        See more*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
                 </div>
 
             </div>

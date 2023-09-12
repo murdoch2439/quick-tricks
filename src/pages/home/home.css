@@ -92,8 +92,9 @@
     width:100%;
     padding: 2rem 0;
     /*background-color: #f5ce6c;*/
-    background-color: mediumvioletred;
+    background-color: #7DB4F9;
     border-radius: 2rem;
+
 
 }
 
@@ -108,7 +109,14 @@
     display:grid;
     place-items: center;
     grid-gap: 1rem;
+
 }
+
+.cta>p{
+    color:white;
+    margin-top: 0.8rem;
+}
+
 
 .second__title{
     font-size:1.7rem;
