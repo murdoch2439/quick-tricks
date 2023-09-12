@@ -30,12 +30,12 @@ let ARTICLES : Article[] =[
         }
     },
     {
-        id:"great-title-with-css2",
+        id:"gr84hh38a8208e3xj83j8d93",
         date:"10-02-2021",
-        shortDescription:"To try using the logging functions in the Console: Open the demo webpage Console messages examples: log, info, error, and warn in a new window or tab. Press Ctrl + Shift + J. And by the way you'll get it straight in the path of making your codebase more likely to clean..",
+        shortDescription:"To try using the logging functions in the Console: Open the demo web page Console messages examples: log, info, error, and warn in a new window or tab. Press Ctrl + Shift + J. And by the way you'll get it straight in the path of making your codebase more likely to clean..",
         duration:"2 min read",
         image:photo,
-        tags:["JAVASCRIPT", "DESIGN"],
+        tags:["JAVASCRIPT", "DESIGN", "PROGRAMMING"],
         title:"How to console.log anything?",
         metadata:{
             created:"02-02-2021T03:20:50",

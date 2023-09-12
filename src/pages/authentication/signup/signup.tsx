@@ -23,6 +23,7 @@ const SignUp : FunctionComponent = () =>{
     const navigate= useNavigate()
     // const [signupProcess, setSignupProcess] = useState("signup")
     // const [loginProcess, setLoginProcess] = useState("login")
+    const [passwordForgot, setPasswordForgot] = useState(false)
     const [isSignupActive, setIsSignupActive] = useState(true)
     const [isLoginActive, setIsLoginActive] = useState(false)
     const [formSignup, setFormSignup] = useState<Signup>({email:"", username:"", password:""})
@@ -85,6 +86,11 @@ const SignUp : FunctionComponent = () =>{
     ]
 
 
+    const passwordForgotActivationHandler =()=>{
+        setPasswordForgot((val)=> !val)
+    }
+
+
 
 
     const activeProcessHandler=(operation:string)=>{
@@ -118,26 +124,22 @@ const SignUp : FunctionComponent = () =>{
             <div className={"signup__container"}>
                 <div className={"signup__left"}>
                     <div className={"left-child"}>
+                        <div className={"goback__button"} style={{marginBottom:"2rem", fontSize:12, display:"flex", alignItems:"center"  }}>
+                            <ArrowBackIcon />
+                            <span style={{backgroundColor:"rgba(225,225,225,0.3)" }} onClick={()=>navigate("/")}>
+                                    Go back
+                                </span>
+                        </div>
                         <div>
-                            <div className={"goback__button"} style={{marginBottom:"2rem", fontSize:12, display:"flex", alignItems:"center"  }}>
-                                <ArrowBackIcon />
-                                <span style={{backgroundColor:"rgba(225,225,225,0.3)" }} onClick={()=>navigate("/")}>
 
-
-                                Go back
-                            </span>
-                            </div>
                             <h1 className={"title"}>Welcome onboard</h1>
                             <p className={"title sign__paragraph"}>Go ahead and join the community today and enjoy coding!</p>
                         </div>
 
-
                         {/*<img className={"img"} alt={"logo"} src={logo} style={{width:60, height:30}} />*/}
-
                         <div className={"signup__image"}>
-                            <img alt={"banner"} src={banner} className={"banner-image"} />
+                            <img alt={"banner"} src={logo} className={"banner-image"} />
                         </div>
-
                         <div className={"Auth-switcher"}>
                             <AuthCta isActive={isSignupActive} title={"Sign Up"} icon={<MarkunreadOutlinedIcon />} activeProcessHandler={()=>activeProcessHandler("signup")} />
                             <AuthCta isActive={isLoginActive} title={"Login"} icon={<LockOpenOutlinedIcon />} activeProcessHandler={()=>activeProcessHandler("login")} />
@@ -148,9 +150,11 @@ const SignUp : FunctionComponent = () =>{
                 <div className={"signup__right"}>
                     <div className={"signup__form"}>
                         <div>
-                            <h1>{isSignupActive ? "Create an Account": "Log into Your account"}</h1>
+                            <h1>{isSignupActive ? "Sign up": `${passwordForgot ? "Password forgot": "Log in"}`}</h1>
 
-                                <p className={"sign__paragraph goo"}>QuickTricks Where we learn</p>
+                                <p className={"sign__paragraph goo"}>
+                                    {isSignupActive ? "QuickTricks Where we learn": `${passwordForgot ? "Type your email to reset your password": "QuickTricks Where we learn"}`}
+                                </p>
 
                             <form className={"forms"} onSubmit={onSubmit}  >
                                 {
@@ -161,14 +165,31 @@ const SignUp : FunctionComponent = () =>{
                                             <AuthInput name={"email"} onChangeHandler={onChangeHandler} label={"Email"} placeholder={"Your email"} />
                                             <AuthInput label={"Password"} name={"password"} onChangeHandler={onChangeHandler} placeholder={"Your password"} type={"password"} />
                                         </>:
-                                        <div >
-                                            {/*{inputsLogin.map((elements, index)=>(<AuthInput key={index}  elements={elements} />))}*/}
-                                            <AuthInput name={"email"} onChangeHandler={onChangeHandler} label={"Email"} placeholder={"Your email"} />
+                                        <div>
+                                            {
+                                                passwordForgot?
+                                                    <>
+                                                        <AuthInput name={"email"} onChangeHandler={onChangeHandler} label={"Email"} placeholder={"Your email"} />
+                                                        <div style={{textAlign:"right"}} className={"password__forgot"} onClick={passwordForgotActivationHandler}>
+                                                            <small >Login instead?</small>
+                                                        </div>
 
-                                            <AuthInput name={"password"} type={"password"} onChangeHandler={onChangeHandler} label={"Password"} placeholder={"Your password"} />
-                                            <div style={{textAlign:"right"}}>
-                                                <small>Password forgot?</small>
-                                            </div>
+                                                    </>
+
+                                                    :
+                                                    <>
+
+                                                        {/*{inputsLogin.map((elements, index)=>(<AuthInput key={index}  elements={elements} />))}*/}
+                                                        <AuthInput name={"email"} onChangeHandler={onChangeHandler} label={"Email"} placeholder={"Your email"} />
+
+                                                        <AuthInput name={"password"} type={"password"} onChangeHandler={onChangeHandler} label={"Password"} placeholder={"Your password"} />
+                                                        <div style={{textAlign:"right"}} className={"password__forgot"} onClick={passwordForgotActivationHandler}>
+                                                            <small >Password forgot?</small>
+                                                        </div>
+
+                                                    </>
+                                            }
+
 
                                         </div>
                                 }
@@ -179,16 +200,7 @@ const SignUp : FunctionComponent = () =>{
 
 
 
-
-
-
-
-
-
-
-
-
-                                <button  className={"btn"}>{isSignupActive ? "Sign up": "Login"}</button>
+                                <button  className={"btn"} onClick={()=>navigate("/")}>{isSignupActive ? "Create": `${passwordForgot ? "Validate": "Log in"}`}</button>
 
                             </form>
 

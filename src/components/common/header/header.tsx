@@ -39,15 +39,15 @@ const Header: FunctionComponent = () => {
             </div>
 
 
-            <div className={"header__menu-container"}>
-                <div className={"header__menu"}>
-                    {toggleMenu
-                        ? <RiCloseLine color={"black"} size={27} onClick={()=>setToggleMenu(false)} />
-                        : <RiMenu3Line color={"black"} size={27} onClick={()=>setToggleMenu(true)} />
-                    }
-                </div>
+            {/*<div className={"header__menu-container"}>*/}
+            {/*    <div className={"header__menu"}>*/}
+            {/*        {toggleMenu*/}
+            {/*            ? <RiCloseLine color={"black"} size={27} onClick={()=>setToggleMenu(false)} />*/}
+            {/*            : <RiMenu3Line color={"black"} size={27} onClick={()=>setToggleMenu(true)} />*/}
+            {/*        }*/}
+            {/*    </div>*/}
 
-            </div>
+            {/*</div>*/}
 
         </header>
     );
