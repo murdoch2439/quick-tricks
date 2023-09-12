@@ -22,7 +22,7 @@ let ARTICLES : Article[] =[
         duration:"2 min read",
         image:photo,
         tags:["JAVASCRIPT", "DESIGN"],
-        title:"ReactJS vs NextJS",
+        title:"Bye-bye useState & useEffect: Revolutionizing React Development!",
         metadata:{
             created:"10-02-2021T03:20:50",
             modified:"10-02-2021T03:20:50",

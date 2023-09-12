@@ -1,12 +1,12 @@
 import React, {FunctionComponent} from 'react'
 import "./button.css"
 import { useNavigate} from 'react-router-dom'
-import {SIGNUP} from "../../../../constants/variableNames";
+import {AUTHENTICATION} from "../../../../constants/variableNames";
 
 const SignInButton : FunctionComponent = () =>{
     const navigate= useNavigate()
     const onClick=()=>{
-        navigate(SIGNUP)
+        navigate(AUTHENTICATION)
     }
     return(
         <div className={"button-container"}>
