@@ -1,6 +1,7 @@
 .tags__container{
     /*background:red ;*/
     display: flex;
+    /*grid-auto-flow:auto;*/
     gap: 1rem;
 }
 .tag__container{
@@ -9,7 +10,6 @@
     border: 1px solid grey;
     color:grey;
     font-size:11px;
-
 }
 
 .tag__container:hover{
