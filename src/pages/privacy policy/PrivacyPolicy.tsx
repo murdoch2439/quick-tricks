@@ -3,6 +3,7 @@ import "./privacypolicy.css"
 import {useNavigate} from "react-router-dom";
 
 
+
 export const PrivacyPolicy : FunctionComponent = () =>{
     const navigate= useNavigate()
     return(
