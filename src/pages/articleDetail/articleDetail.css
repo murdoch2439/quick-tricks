@@ -3,9 +3,13 @@
     margin:0;
 }
 
+h3{
+    margin: 1rem 0;
+}
+
 .detail__header{
     /*height:200px;*/
-    padding:0;
+    padding:0 0 1rem 0;
     margin:0;
 }
 
@@ -158,6 +162,10 @@
     margin-bottom: 5px;
 }
 
+.para{
+    margin-top:1rem
+}
+
 
 .detail__tagsection{
     margin-top:10px;
@@ -176,5 +184,22 @@
     padding-top:10px;
     gap: 0.4rem;
     flex-wrap:wrap;
+}
+
+
+@media screen and (max-width :600px){
+
+    .detail__main_right_child{
+        display: none;
+    }
+
+    .detail__main_left_child{
+        width: 100%;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
 
